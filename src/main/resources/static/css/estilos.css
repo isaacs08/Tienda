@@ -1,7 +1,9 @@
+/*Selector de ID*/
+
 #tituloPrincipal{
-   text-align: center;
-   color: black;
-   background: red;
+    text-align: center;
+    color: black;
+    background: red;
 }
 
 .parrafoVerde {
@@ -10,4 +12,46 @@
 
 .parrafoRojo {
     color: red;
+}
+
+.ejemploPadding {
+    padding: 10px;
+    /*arriba/abajo - izquierda/derecha*/
+    padding: 10px 20px;
+    /*arriba/ - izquierda/derecha - abajo*/
+    padding: 10px 20px 30px;
+    /*arriba/ - izquierda - derecha - abajo*/
+    padding: 10px 20px 30px 40px;
+
+    margin-bottom: 40px;
+}
+
+/*Selector de Elemento*/
+/*p, h1, div {
+   font-size: 20px;
+}*/
+
+/*Selector de Descendente*/
+
+div p {
+    font-size: 50px;
+}
+
+/*div.contenedor p.parrafoRojo {
+    font-size: 50px;
+}*/
+
+a {
+    font-size: 20px
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: red;
+    transition: 1s;
+}
+a:active {
+    color: white;
+    background: black
 }

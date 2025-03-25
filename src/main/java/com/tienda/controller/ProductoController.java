@@ -38,6 +38,8 @@ public class ProductoController {
     @RequestMapping("/listado")
     public String page(Model model) {
         List<Producto> productos = productoService.getProductos(false);
+        //List<Producto> productos = productoService.buscarPorExistencias(5);
+        //List<Producto> productos = productoService.buscarPorExistenciasYPrecio(5, 25000.0);
         
         List<Categoria> listaCategoriaActivas = categoriaService.getCategorias(false);
 
